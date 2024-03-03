@@ -3,7 +3,7 @@ import Document from "./Document";
 import { NewPostInput } from "./NewPostInput";
 import "./Document.css";
 
-import { get, post } from "../../utilities";
+import { get, post } from "../../server/utilities";
 
 const Corpus = (props) => {
   const [alertContent, setAlertContent] = useState("");

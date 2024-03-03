@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ChatList from "../modules/ChatList.js";
 import Chat from "../modules/Chat.js";
-import { socket } from "../../client-socket.js";
-import { get } from "../../utilities";
+import { socket } from "./client-socket.js";
+import { get } from "../../server/utilities.js";
 
 import "./Chatbook.css";
 

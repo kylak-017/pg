@@ -1,5 +1,5 @@
 import socketIOClient from "socket.io-client";
-import { post } from "./utilities";
+import { post } from "../../server/utilities";
 const endpoint = window.location.hostname + ":" + window.location.port;
 export const socket = socketIOClient(endpoint);
 socket.on("connect", () => {

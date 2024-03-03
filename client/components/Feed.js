@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Card from "../modules/Card.js";
 import { NewStory } from "../modules/NewPostInput.js";
 
-import { get } from "../../utilities";
+import { get } from "../../server/utilities.js";
 
 const Feed = (props) => {
   const [stories, setStories] = useState([]);

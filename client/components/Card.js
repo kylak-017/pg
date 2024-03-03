@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SingleStory from "./SingleStory.js";
 import CommentsBlock from "./CommentsBlock.js";
-import { get } from "../../utilities";
+import { get } from "../../server/utilities.js";
 
 import "./Card.css";
 
