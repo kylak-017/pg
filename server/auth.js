@@ -32,7 +32,7 @@ function getOrCreateUser(user) {
 }
 
 function login(req, res) {
-  verify(req.body.token)
+  verify(req.body.token) 
     .then((user) => getOrCreateUser(user))
     .then((user) => {
       // persist user in the session

@@ -26,14 +26,14 @@ const NavBar = (props) => {
             Profile
           </Link>
         )}
-        <Link to="/chat/" className="NavBar-link">
-          Chat
+        <Link to="/leaderboard/" className="NavBar-link">
+          Leaderboard
         </Link>
-        <Link to="/game/" className="NavBar-link">
-          Game
+        <Link to="/Feed/" className="NavBar-link">
+          Feed
         </Link>
-        <Link to="/llm/" className="NavBar-link">
-          LLM
+        <Link to="/Map/" className="NavBar-link">
+          Map
         </Link>
         {props.userId ? (
           <GoogleLogout

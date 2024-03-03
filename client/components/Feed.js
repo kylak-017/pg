@@ -34,6 +34,8 @@ const Feed = (props) => {
         creator_id={storyObj.creator_id}
         userId={props.userId}
         content={storyObj.content}
+        participants = {storyObj.participants}
+        cleanup_date = {storyObj.cleanup_date}
       />
     ));
   } else {

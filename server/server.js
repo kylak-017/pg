@@ -66,6 +66,18 @@ app.use(
   })
 );
 
+let participants = [];
+
+app.get('/add-participant', (req, res) => {
+  const clientId = req.query.clientId;
+  if (clientId) {
+    participants.push(clientId);
+    res.json({ success: true, participants });
+  } else {
+    res.status(400).json({ success: false, message: 'No clientId provided' });
+  }
+});
+
 // this checks if the user is logged in, and populates "req.user"
 app.use(auth.populateCurrentUser);
 

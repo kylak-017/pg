@@ -56,9 +56,9 @@ const App = () => {
         <Router>
           <Feed path="/" userId={userId} />
           <Profile path="/profile/:userId" />
-          <Chatbook path="/chat/" userId={userId} />
-          <Game path="/game/" userId={userId} />
-          <LLM path="/llm/" userId={userId} />
+          <Leaderboard path="/leaderboard/:userId" userId={userId} />
+          <Feed path="/feed/" userId={userId} />
+          <Map path="/map/" userId={userId} />
           <NotFound default />
         </Router>
       </div>
